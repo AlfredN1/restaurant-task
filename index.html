@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurang Smakfullt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Restaurang Smakfullt</h1>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#home" class="active">Hem</a></li>
+        <li><a href="#menu">Meny</a></li>
+        <li><a href="#lunch">Lunchbuffé</a></li>
+        <li><a href="#prices">Prislista</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div class="mobile-menu-icon" id="mobile-menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Välkommen till Smakfullt</h2>
+        <p>En kulinarisk upplevelse i hjärtat av staden</p>
+        <a href="#menu" class="btn">Utforska vår meny</a>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <h2>Om oss</h2>
+        <div class="about-content">
+          <div class="about-text">
+
+            <h3>Vår filosofi</h3>
+            <p>På Smakfullt tror vi på enkel men vällagad mat med fokus på råvarornas naturliga smaker. Vi arbetar
+              uteslutande med lokala producenter och följer säsongens utbud för att alltid kunna erbjuda de fräschaste
+              ingredienserna. Vår meny förändras därför kontinuerligt för att spegla det bästa naturen har att erbjuda
+              just nu.</p>
+
+            <h3>Vår mat</h3>
+            <p>Våra rätter är inspirerade av det nordiska köket med moderna influenser från hela världen. Vi är stolta
+              över att kunna erbjuda både traditionella smaker och innovativa kombinationer som utmanar och överraskar.
+              Alla rätter tillagas från grunden i vårt öppna kök, där du kan se våra kockar i aktion.</p>
+          </div>
+          <div class="about-image">
+            <img src="img/interior.png" alt="Restaurang Smakfullt interiör">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Vår Meny</h2>
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">Alla</button>
+          <button class="filter-btn" data-filter="starters">Förrätter</button>
+          <button class="filter-btn" data-filter="mains">Varmrätter</button>
+          <button class="filter-btn" data-filter="desserts">Efterrätter</button>
+        </div>
+
+        <div class="menu-items">
+
+          <div class="menu-item starters">
+            <div class="menu-item-content">
+              <h3>Skogssvampssoppa</h3>
+              <p class="description">Krämig soppa på säsongens svamp med tryffelolja och crispy surdegschips</p>
+              <p class="price">125 kr</p>
+              <p class="allergens">Allergener: Gluten, Mjölk</p>
+              <button class="add-to-order" data-name="Skogssvampssoppa" data-price="125">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item starters">
+            <div class="menu-item-content">
+              <h3>Gravad lax</h3>
+              <p class="description">Hemgravad lax med dillstuvad potatis och senapsås</p>
+              <p class="price">145 kr</p>
+              <p class="allergens">Allergener: Fisk, Senap</p>
+              <button class="add-to-order" data-name="Gravad lax" data-price="145">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item starters">
+            <div class="menu-item-content">
+              <h3>Chèvre Chaud</h3>
+              <p class="description">Gratinerad getost på surdegsbröd med honung, valnötter och ruccola</p>
+              <p class="price">135 kr</p>
+              <p class="allergens">Allergener: Gluten, Mjölk, Nötter</p>
+              <button class="add-to-order" data-name="Chèvre Chaud" data-price="135">Lägg till</button>
+            </div>
+          </div>
+
+
+          <div class="menu-item mains">
+            <div class="menu-item-content">
+              <h3>Konfiterad ankbröst</h3>
+              <p class="description">Serveras med rödvinssås, rotselleri-puré och säsongens primörer</p>
+              <p class="price">275 kr</p>
+              <p class="allergens">Allergener: Mjölk, Sulfiter</p>
+              <button class="add-to-order" data-name="Konfiterad ankbröst" data-price="275">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item mains">
+            <div class="menu-item-content">
+              <h3>Halstrad hälleflundra</h3>
+              <p class="description">Med vitvinssås, forellrom, fänkål och dillslungad potatis</p>
+              <p class="price">295 kr</p>
+              <p class="allergens">Allergener: Fisk, Mjölk, Sulfiter</p>
+              <button class="add-to-order" data-name="Halstrad hälleflundra" data-price="295">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item mains">
+            <div class="menu-item-content">
+              <h3>Smörstekt portobello</h3>
+              <p class="description">Med rostad vitlökskräm, picklad rödlök och örtrisotto</p>
+              <p class="price">225 kr</p>
+              <p class="allergens">Allergener: Mjölk</p>
+              <button class="add-to-order" data-name="Smörstekt portobello" data-price="225">Lägg till</button>
+            </div>
+          </div>
+
+
+          <div class="menu-item desserts">
+            <div class="menu-item-content">
+              <h3>Chokladfondant</h3>
+              <p class="description">Med hallonsorbet och rostade hasselnötter</p>
+              <p class="price">115 kr</p>
+              <p class="allergens">Allergener: Gluten, Mjölk, Ägg, Nötter</p>
+              <button class="add-to-order" data-name="Chokladfondant" data-price="115">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item desserts">
+            <div class="menu-item-content">
+              <h3>Crème brûlée</h3>
+              <p class="description">Klassisk crème brûlée med karamelliserat täcke</p>
+              <p class="price">105 kr</p>
+              <p class="allergens">Allergener: Mjölk, Ägg</p>
+              <button class="add-to-order" data-name="Crème brûlée" data-price="105">Lägg till</button>
+            </div>
+          </div>
+
+          <div class="menu-item desserts">
+            <div class="menu-item-content">
+              <h3>Päronsorbé</h3>
+              <p class="description">Hemgjord päronsorbé med honungskrispiga och mynta</p>
+              <p class="price">95 kr</p>
+              <p class="allergens">Allergener: -</p>
+              <button class="add-to-order" data-name="Päronsorbé" data-price="95">Lägg till</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="lunch" class="lunch-section">
+      <div class="container">
+        <h2>Lunchbuffé</h2>
+        <button id="toggle-lunch-info" class="btn">Visa lunchbuffé-information</button>
+
+        <div id="lunch-info" class="lunch-info hidden">
+          <div class="lunch-details">
+            <div class="lunch-text">
+              <h3>Vår populära lunchbuffé</h3>
+              <p>Varje vardag mellan 11:00-14:00 serverar vi vår populära lunchbuffé med ett brett utbud av varmrätter,
+                sallader, hembakat bröd och dessert. Menyn varierar dagligen och följer säsongens råvaror.</p>
+
+              <h4>Veckans specialerbjudanden:</h4>
+              <ul>
+                <li><strong>Måndag:</strong> Vegetarisk dag med säsongens grönsaker</li>
+                <li><strong>Tisdag:</strong> Fisk och skaldjur</li>
+                <li><strong>Onsdag:</strong> Asiatiska influenser</li>
+                <li><strong>Torsdag:</strong> Husmanskost</li>
+                <li><strong>Fredag:</strong> Grillbuffé</li>
+              </ul>
+
+              <h4>Priser:</h4>
+              <ul class="price-list">
+                <li>Lunchbuffé: 125 kr</li>
+                <li>Lunchbuffé inkl. dessert: 145 kr</li>
+                <li>Salladsbar (endast): 95 kr</li>
+              </ul>
+
+              <h4>Drycker:</h4>
+              <ul class="price-list">
+                <li>Läsk/Mineralvatten: 25 kr</li>
+                <li>Kaffe/Te: 20 kr</li>
+                <li>Dagens öl (33cl): 65 kr</li>
+                <li>Alkoholfritt alternativ: 45 kr</li>
+                <li>Dagens vin (glas): 75 kr</li>
+              </ul>
+            </div>
+            <div class="lunch-image">
+              <img src="img/buffet.png" alt="Lunchbuffé">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="prices" class="prices-section">
+      <div class="container">
+        <h2>Prislista</h2>
+        <div class="price-list-container">
+          <h3>Förrätter</h3>
+          <ul class="price-list">
+            <li><span>Skogssvampssoppa</span> <span>125 kr</span></li>
+            <li><span>Gravad lax</span> <span>145 kr</span></li>
+            <li><span>Chèvre Chaud</span> <span>135 kr</span></li>
+          </ul>
+
+          <h3>Varmrätter</h3>
+          <ul class="price-list">
+            <li><span>Konfiterad ankbröst</span> <span>275 kr</span></li>
+            <li><span>Halstrad hälleflundra</span> <span>295 kr</span></li>
+            <li><span>Smörstekt portobello</span> <span>225 kr</span></li>
+          </ul>
+
+          <h3>Efterrätter</h3>
+          <ul class="price-list">
+            <li><span>Chokladfondant</span> <span>115 kr</span></li>
+            <li><span>Crème brûlée</span> <span>105 kr</span></li>
+            <li><span>Päronsorbé</span> <span>95 kr</span></li>
+          </ul>
+
+          <h3>Drycker</h3>
+          <ul class="price-list">
+            <li><span>Husets vin (glas)</span> <span>85 kr</span></li>
+            <li><span>Öl (33cl)</span> <span>75 kr</span></li>
+            <li><span>Alkoholfritt alternativ</span> <span>55 kr</span></li>
+            <li><span>Kaffe/Te</span> <span>35 kr</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="order-summary-section">
+      <div class="container">
+        <h2>Din beställning</h2>
+        <div id="order-items">
+          <p class="empty-order">Din beställning är tom</p>
+        </div>
+        <div class="order-total">
+          <p>Totalsumma: <span id="total-price">0</span> kr</p>
+        </div>
+        <button id="clear-order" class="btn">Rensa beställning</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Kontakta oss</h3>
+          <p>Restaurang Smakfullt</p>
+          <p>Restauranggatan 42</p>
+          <p>123 45 Matstad</p>
+          <p>Tel: 08-123 45 67</p>
+          <p>Email: info@smakfullt.se</p>
+        </div>
+        <div class="footer-hours">
+          <h3>Öppettider</h3>
+          <p>Måndag-Fredag: 11:00-22:00</p>
+          <p>Lördag: 13:00-23:00</p>
+          <p>Söndag: 13:00-21:00</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Restaurang Smakfullt. Alla rättigheter förbehållna.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
