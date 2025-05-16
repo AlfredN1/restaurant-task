@@ -6,5 +6,5 @@ Detta är en enkel webbplats byggd med HTML, CSS och JavaScript.
 ## Skapad av:
 [**AlfredN1**]
 
-## Länk till sidan: [Restaurant-task](https://lord48.github.io/restaurant-task/)
+## Länk till sidan: [Restaurant-task](https://AlfredN1.github.io/restaurant-task/)
 
